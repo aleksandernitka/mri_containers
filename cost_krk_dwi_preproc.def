@@ -8,7 +8,6 @@
 # Scikit Learn 1.1.0
 # Scikit Image 0.19.2
 
-
 Bootstrap: docker
 From: ubuntu:20.04
 
@@ -91,9 +90,8 @@ conda install -c conda-forge nilearn=0.9.1 -y
 conda install -c conda-forge dipy=1.5.0 -y
 conda install -c conda-forge fury=0.8.0 -y
 conda install -c conda-forge scikit-learn=1.1.0 -y
+conda install -c conda-forge jupyterlab -y
 conda install scikit-image=0.19.2 -y
-
-# FSL update
-$FSLDIR/fslpython/bin/conda update -n fslpython -c conda-forge --update-all fsleyes
+conda install -c conda-forge cmocean -y
 
 # End
