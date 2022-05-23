@@ -79,7 +79,12 @@ conda init bash
 # Clean up
 sync && conda clean --all --yes && sync
 rm -rf ~/.cache/pip/*
-  
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
 # install tensorflow
 # required by some of the more recent fs parcelation methods
 pip install --upgrade pip

@@ -25,6 +25,7 @@ export FSLGECUDAQ="cuda.q"
 export CONDA_DIR="/opt/miniconda-latest"
 export PATH="/opt/miniconda-latest/bin:$PATH"
 
+
 %post
 apt-get update -qq
 apt-get install -y -q --no-install-recommends \
@@ -82,6 +83,11 @@ conda init bash
 # Clean up
 sync && conda clean --all --yes && sync
 rm -rf ~/.cache/pip/*
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
 
 # Install all required conda packages
 conda install python=3.9 -y
