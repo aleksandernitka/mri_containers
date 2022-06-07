@@ -37,7 +37,10 @@ apt-get install -y -q --no-install-recommends \
     tcsh \
     vim \
     nano \
-    parallel
+    parallel \
+    git \
+    tree \
+    htop
 rm -rf /var/lib/apt/lists/*
 echo "Downloading FreeSurfer ..."
 mkdir -p /opt/freesurfer-7.2.0
