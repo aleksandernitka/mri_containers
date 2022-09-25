@@ -4,7 +4,7 @@
 # DIPY 1.5.0
 # Fury 0.8.0
 # Nilearn 0.9.2
-# Nipype 1.8.6
+# Nipype 1.8.5
 # Scikit Learn 1.1.2
 # Scikit Image 0.19.3
 
@@ -65,7 +65,7 @@ alias l='ls -CF'
 
 # Install all required conda packages
 conda install python=3.9 -y
-pip install nipype==1.8.6
+pip install nipype==1.8.5
 conda install -c conda-forge nilearn=0.9.2 -y
 conda install -c conda-forge dipy=1.5.0 -y
 conda install -c conda-forge fury=0.8.0 -y
